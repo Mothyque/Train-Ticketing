@@ -3,24 +3,21 @@ package domain;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Entity<ID> implements Serializable
-{
+public class Entity<ID> implements Serializable {
+
     private static final long serialVersionUID = 7331115341259248461L;
     private ID id;
 
-    public ID getId()
-    {
+    public ID getId() {
         return id;
     }
 
-    public void setId(ID id)
-    {
+    public void setId(ID id) {
         this.id = id;
     }
 
     @Override
-    public boolean equals(Object o)
-    {
+    public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Entity)) return false;
         Entity<?> entity = (Entity<?>) o;
@@ -28,8 +25,7 @@ public class Entity<ID> implements Serializable
     }
 
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         return Objects.hash(getId());
     }
 }

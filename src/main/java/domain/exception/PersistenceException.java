@@ -1,11 +1,14 @@
 package domain.exception;
 
-public class PersistenceException extends RuntimeException {
-    public PersistenceException(String message) {
+public class PersistenceException extends RuntimeException
+{
+    public PersistenceException(String message)
+    {
         super(message);
     }
 
-    public PersistenceException(String message, Throwable cause) {
+    public PersistenceException(String message, Throwable cause)
+    {
         super(message, cause);
     }
 }

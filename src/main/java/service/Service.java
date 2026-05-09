@@ -1,7 +1,6 @@
 package service;
 
 
-
 import domain.Entity;
 import domain.exception.ValidationException;
 import domain.validator.Validator;
@@ -76,11 +75,6 @@ public class Service<ID, E extends Entity<ID>> extends Observable
     public Iterable<E> findAll()
     {
         return repository.findAll();
-    }
-
-    public Iterable<E> findAll(int pageNumber, int pageSize)
-    {
-        return repository.findAll(pageNumber, pageSize);
     }
 
     public int size()

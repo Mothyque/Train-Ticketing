@@ -11,10 +11,11 @@ public class Station extends Entity<Integer>
         this.location = location;
     }
 
-    public String  getName()
+    public String getName()
     {
         return name;
     }
+
     public String getLocation()
     {
         return location;
